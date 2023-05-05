@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/StyleSheet1.css" rel="stylesheet" />
+	<style>
+		body {
+			background-color: yellow;
+		}
+
+		h1 {
+			color: maroon;
+			margin-left: 40px;
+		}
+	</style>
+	
+	<script>
+		function myFunction() {
+			var textValue = document.getElementById('txtbox').value;
+			var i = textValue.length - 1;
+			var reverse = "";
+			for (let j = i; j >= 0; j--) {
+				reverse += textValue.charAt(j);
+
+			}
+			alert(reverse);
+
+		}
+	</script>
+</head>
+<body>
+	<h1>This is a heading</h1>
+	<p>This is a paragraph</p>
+<button type="button" 
+		class="MyButton" 
+		onclick="myFunction()">Button</button>
+<input type="password" id="txtbox" name="txtbox"/>
+<table style="border:solid;border-width:1px;width:100%;">
+	<tablebody>
+		<tr>
+			<td style="width:50%;height:20px;">
+				<img src="Images/mother.jpg" style="width:100%;"/> <!---->
+			</td>
+			<td>
+				<img src="Images/bedrest.jpg" style="width:100%;" />
+			</td>
+		</tr>
+		<td style="width:50%;height:20px;">
+			<img src="Images/shazam.jpg" style="width:100%;"/>
+		</td>
+		<td>
+			<img src="Images/johnwick.jpg" style="width:100%;" />
+		</td>
+		</tr>
+	</tablebody>
+</table>
+</body>
+</html>
